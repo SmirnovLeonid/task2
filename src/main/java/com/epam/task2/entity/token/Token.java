@@ -1,4 +1,4 @@
-package com.epam.task2.tools.token;
+package com.epam.task2.entity.token;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -2,19 +2,15 @@ package com.epam.task2;
 
 import com.epam.task2.io.printer.ConsolePrinter;
 import com.epam.task2.io.printer.IPrinter;
-import com.epam.task2.tools.Sentence;
-import com.epam.task2.tools.Text;
-import com.epam.task2.tools.token.Word;
+import com.epam.task2.entity.Sentence;
+import com.epam.task2.entity.Text;
+import com.epam.task2.entity.token.Word;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Admin on 07.11.2015.
- */
 
 public class Task {
-
 
     IPrinter consolePrinter = new ConsolePrinter();
     Word word= new Word();

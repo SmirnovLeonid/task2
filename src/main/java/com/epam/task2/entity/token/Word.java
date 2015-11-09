@@ -1,6 +1,6 @@
-package com.epam.task2.tools.token;
+package com.epam.task2.entity.token;
 
-import com.epam.task2.tools.Sentence;
+import com.epam.task2.entity.Sentence;
 
 import java.util.ArrayList;
 import java.util.List;

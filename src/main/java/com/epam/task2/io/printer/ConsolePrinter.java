@@ -1,21 +1,20 @@
 package com.epam.task2.io.printer;
 
-import com.epam.task2.tools.Paragraph;
-import com.epam.task2.tools.Sentence;
-import com.epam.task2.tools.Text;
-import com.epam.task2.tools.token.Token;
+import com.epam.task2.entity.Paragraph;
+import com.epam.task2.entity.Sentence;
+import com.epam.task2.entity.Text;
+import com.epam.task2.entity.token.Token;
 
 import java.util.List;
 
-/**
- * Created by Admin on 07.11.2015.
- */
+
 public class ConsolePrinter implements IPrinter {
 
     public void displayText(Text text) {
         System.out.println(text.getAsString());
     }
 
+    @Override
     public void print(Text text) {
         String result = "";
         for (Paragraph paragraph : text) {

@@ -5,11 +5,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-/**
- * Created by user on 05.11.2015.
- */
+
 public class BufferReader  {
 
+    @Deprecated
     public static String reader(String file) throws FileNotFoundException {
         String result = "";
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {

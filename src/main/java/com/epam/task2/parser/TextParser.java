@@ -1,9 +1,9 @@
 package com.epam.task2.parser;
 
-import com.epam.task2.tools.Paragraph;
-import com.epam.task2.tools.Sentence;
-import com.epam.task2.tools.Text;
-import com.epam.task2.tools.token.Token;
+import com.epam.task2.entity.Paragraph;
+import com.epam.task2.entity.Sentence;
+import com.epam.task2.entity.Text;
+import com.epam.task2.entity.token.Token;
 import org.apache.log4j.Logger;
 
 import java.io.FileInputStream;
@@ -13,12 +13,10 @@ import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * Created by user on 05.11.2015.
- */
-public class SimpleParser implements ParserInterface
+
+public class TextParser
 {
-    private static Logger logger = Logger.getLogger(SimpleParser.class);
+    private static Logger logger = Logger.getLogger(TextParser.class);
 
     private static Properties prop = new Properties();
     static  {
@@ -39,7 +37,7 @@ public class SimpleParser implements ParserInterface
             for (String paragraph : tmp) {
                 result.addParagraph(parseParagraph(paragraph));
             }
-            System.out.println("Complite parsing text...\n");
+
             return result ;
 
         }

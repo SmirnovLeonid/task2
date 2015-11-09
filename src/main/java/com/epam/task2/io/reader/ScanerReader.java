@@ -5,9 +5,7 @@ import org.apache.log4j.Logger;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-/**
- * Created by Admin on 07.11.2015.
- */
+
 public class ScanerReader  {
     private static Logger logger = Logger.getLogger(ScanerReader.class);
     public static  String reader(String file) throws FileNotFoundException {

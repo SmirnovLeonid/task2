@@ -1,14 +1,12 @@
-package com.epam.task2.tools;
+package com.epam.task2.entity;
 
-import com.epam.task2.tools.token.Token;
+import com.epam.task2.entity.token.Token;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/**
- * Created by user on 05.11.2015.
- */
+
 public class Sentence implements Iterable<Token> {
     private List<Token> tokensList;
 
@@ -54,9 +52,11 @@ public class Sentence implements Iterable<Token> {
         }
         return result.toString();
     }
+
     public Iterator<Token> iterator() {
         return tokensList.iterator();
     }
+
     public String toString() {
         String result = "";
         for (Token token : tokensList) {

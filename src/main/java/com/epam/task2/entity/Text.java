@@ -1,30 +1,25 @@
-package com.epam.task2.tools;
+package com.epam.task2.entity;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/**
- * Created by user on 05.11.2015.
- */
+
 public class Text implements Iterable<Paragraph> {
     private List<Paragraph> paragraphsList;
 
     public Text() {
         paragraphsList = new ArrayList<>();
     }
+
     public void addParagraph(Paragraph ph){
         paragraphsList.add(ph);
     }
-    public List<Paragraph> getParagraphsList(){
-        return paragraphsList;
-    }
-    public Text(List<Paragraph> paragraphs) {
-        this.paragraphsList = paragraphs;
-    }
+
     public Iterator<Paragraph> iterator() {
         return paragraphsList.iterator();
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

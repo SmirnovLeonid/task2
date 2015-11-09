@@ -1,12 +1,10 @@
-package com.epam.task2.tools;
+package com.epam.task2.entity;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/**
- * Created by user on 05.11.2015.
- */
+
 public class Paragraph implements Iterable<Sentence>{
     private List<Sentence> sentencesList;
 
